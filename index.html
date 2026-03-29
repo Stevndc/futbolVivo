@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>futbolVivo | Partidos en Vivo y Directo</title>
+    <meta name="description"
+        content="Ver partidos de fútbol en vivo gratis. Accede a los mejores servidores de streaming para ver los partidos más importantes del día.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">futbol<span>Vivo</span></div>
+        <div class="nav-links">
+            <a href="#live">En Vivo</a>
+            <a href="#upcoming">Próximos</a>
+            <a href="#servers">Servidores</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Pasión en cada minuto.</h1>
+        <p>Mira los partidos más importantes del mundo con la mejor calidad. Sin cortes, sin complicaciones. Acceso
+            directo a servidores premium.</p>
+        <a href="#match-list" style="text-decoration: none;">
+            <button class="watch-btn" style="width: auto; padding: 15px 40px; border-radius: 50px;">Ver Calendario
+                Hoy</button>
+        </a>
+    </section>
+
+    <div class="container" id="match-list">
+        <h2 class="section-title" id="live">Partidos en Vivo Ahora</h2>
+        <div class="match-grid" id="live-matches">
+
+            <div class="match-card" data-match-id="col-fra" data-ad-url="https://google.com?q=ad-soccer-1"
+                data-match-url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <span class="match-status status-live">En Vivo</span>
+                <div class="match-content">
+                    <div class="team">
+                        <div class="team-logo">COL</div>
+                        <span class="team-name">Colombia</span>
+                    </div>
+                    <div class="score-area">
+                        <span class="score">1 - 1</span>
+                        <span class="match-time">22 min</span>
+                    </div>
+                    <div class="team">
+                        <div class="team-logo">FRA</div>
+                        <span class="team-name">Francia</span>
+                    </div>
+                </div>
+                <button class="watch-btn">Mirar Ahora</button>
+            </div>
+
+            <div class="match-card" data-match-id="lit-geo" data-ad-url="https://google.com?q=ad-soccer-2"
+                data-match-url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <span class="match-status status-live">En Vivo</span>
+                <div class="match-content">
+                    <div class="team">
+                        <div class="team-logo">LIT</div>
+                        <span class="team-name">Lituania</span>
+                    </div>
+                    <div class="score-area">
+                        <span class="score">0 - 2</span>
+                        <span class="match-time">78 min</span>
+                    </div>
+                    <div class="team">
+                        <div class="team-logo">GEO</div>
+                        <span class="team-name">Georgia</span>
+                    </div>
+                </div>
+                <button class="watch-btn">Mirar Ahora</button>
+            </div>
+        </div>
+
+        <h2 class="section-title" id="upcoming" style="margin-top: 80px;">Próximos Partidos Mañana (29 Mar)</h2>
+        <div class="match-grid" id="upcoming-matches">
+
+            <div class="match-card" data-match-id="arg-mor" data-ad-url="https://google.com?q=ad-soccer-3"
+                data-match-url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <span class="match-status status-upcoming">Mañana - 15:00</span>
+                <div class="match-content">
+                    <div class="team">
+                        <div class="team-logo">ARG</div>
+                        <span class="team-name">Argentina</span>
+                    </div>
+                    <div class="score-area">
+                        <span class="score">vs</span>
+                        <span class="match-time">Amistoso</span>
+                    </div>
+                    <div class="team">
+                        <div class="team-logo">MAR</div>
+                        <span class="team-name">Marruecos</span>
+                    </div>
+                </div>
+                <button class="watch-btn">Agendar Recordatorio</button>
+            </div>
+
+            <div class="match-card" data-match-id="bra-esp" data-ad-url="https://google.com?q=ad-soccer-4"
+                data-match-url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <span class="match-status status-upcoming">Mañana - 19:30</span>
+                <div class="match-content">
+                    <div class="team">
+                        <div class="team-logo">BRA</div>
+                        <span class="team-name">Brasil</span>
+                    </div>
+                    <div class="score-area">
+                        <span class="score">vs</span>
+                        <span class="match-time">Amistoso</span>
+                    </div>
+                    <div class="team">
+                        <div class="team-logo">ESP</div>
+                        <span class="team-name">España</span>
+                    </div>
+                </div>
+                <button class="watch-btn">Agendar Recordatorio</button>
+            </div>
+
+            <div class="match-card" data-match-id="mex-ita" data-ad-url="https://google.com?q=ad-soccer-5"
+                data-match-url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                <span class="match-status status-upcoming">Mañana - 21:00</span>
+                <div class="match-content">
+                    <div class="team">
+                        <div class="team-logo">MEX</div>
+                        <span class="team-name">México</span>
+                    </div>
+                    <div class="score-area">
+                        <span class="score">vs</span>
+                        <span class="match-time">Amistoso</span>
+                    </div>
+                    <div class="team">
+                        <div class="team-logo">ITA</div>
+                        <span class="team-name">Italia</span>
+                    </div>
+                </div>
+                <button class="watch-btn">Agendar Recordatorio</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="notification">Abriendo enlace... Haz clic de nuevo para ver el partido.</div>
+
+    <footer>
+        <div style="text-align: center; padding: 50px 0; color: var(--text-grey); font-size: 0.9rem;">
+            &copy; 2026 futbolVivo. Todos los derechos reservados. Redirecciones a servidores externos.
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
