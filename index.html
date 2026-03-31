@@ -18,129 +18,224 @@
     <nav>
         <div class="logo">futbol<span>Vivo</span></div>
         <div class="nav-links">
-            <a href="#live">En Vivo</a>
-            <a href="#upcoming">Próximos</a>
-            <a href="#servers">Servidores</a>
+            <a href="#featured" id="nav-home">Partidos de Hoy</a>
         </div>
     </nav>
 
-    <section class="hero">
-        <h1>Pasión en cada minuto.</h1>
-        <p>Mira los partidos más importantes del mundo con la mejor calidad. Sin cortes, sin complicaciones. Acceso
-            directo a servidores premium.</p>
-        <a href="#match-list" style="text-decoration: none;">
-            <button class="watch-btn" style="width: auto; padding: 15px 40px; border-radius: 50px;">Ver Calendario
-                Hoy</button>
-        </a>
-    </section>
+    <div id="landing-view">
+        <section class="hero">
+            <h1>Pasión en cada minuto.</h1>
+            <p>Mira los partidos más importantes del mundo con la mejor calidad. Sin cortes, sin complicaciones. Acceso
+                directo a servidores premium.</p>
+            <a href="#featured" style="text-decoration: none;">
+                <button class="watch-btn"
+                    style="width: auto; padding: 18px 45px; border-radius: 50px; font-size: 1.1rem;">Ver Calendario
+                    Hoy</button>
+            </a>
+        </section>
 
-    <div class="container" id="match-list">
-        <h2 class="section-title" id="live">Partidos en Vivo Ahora</h2>
-        <div class="match-grid" id="live-matches">
-
-            <div class="match-card" data-match-id="col-fra" data-ad-url="https://google.com?q=ad-soccer-1"
-                data-match-url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                <span class="match-status status-live">En Vivo</span>
-                <div class="match-content">
-                    <div class="team">
-                        <div class="team-logo">COL</div>
-                        <span class="team-name">Colombia</span>
+        <div class="container">
+            <h2 class="section-title" id="featured">Partidos Destacados de Hoy</h2>
+            <!-- SECCIÓN: PARTIDOS DE HOY - Añade o quita tarjetas aquí -->
+            <div class="match-grid" id="featured-matches">
+                <!-- PARTIDOS DINÁMICOS -->
+                <div class="match-card" data-match-id="rm-bar" 
+                     data-ad-url="https://www.profitablecpmratenetwork.com/hqh5t3twpm?key=cd9aed8a088b43801e0628122e31b720"
+                     data-match-url="detail">
+                    <span class="match-status status-live">EN VIVO</span>
+                    <div class="match-content">
+                        <div class="team">
+                            <div class="team-logo">RM</div>
+                            <span class="team-name">Real Madrid</span>
+                        </div>
+                        <div class="score-area">
+                            <span class="score">vs</span>
+                            <span class="match-time">EL CLÁSICO</span>
+                        </div>
+                        <div class="team">
+                            <div class="team-logo">FCB</div>
+                            <span class="team-name">Barcelona</span>
+                        </div>
                     </div>
-                    <div class="score-area">
-                        <span class="score">1 - 1</span>
-                        <span class="match-time">22 min</span>
-                    </div>
-                    <div class="team">
-                        <div class="team-logo">FRA</div>
-                        <span class="team-name">Francia</span>
-                    </div>
+                    <button class="watch-btn">Ver Transmisión</button>
                 </div>
-                <button class="watch-btn">Mirar Ahora</button>
+
+                <div class="match-card" data-match-id="bra-arg" 
+                     data-ad-url="https://www.profitablecpmratenetwork.com/hqh5t3twpm?key=cd9aed8a088b43801e0628122e31b720"
+                     data-match-url="detail">
+                    <span class="match-status status-upcoming">Próximamente</span>
+                    <div class="match-content">
+                        <div class="team">
+                            <div class="team-logo">BRA</div>
+                            <span class="team-name">Brasil</span>
+                        </div>
+                        <div class="score-area">
+                            <span class="score">vs</span>
+                            <span class="match-time">20:00</span>
+                        </div>
+                        <div class="team">
+                            <div class="team-logo">ARG</div>
+                            <span class="team-name">Argentina</span>
+                        </div>
+                    </div>
+                    <button class="watch-btn">Agendar Recordatorio</button>
+                </div>
+
+                <div class="match-card" data-match-id="col-per" 
+                     data-ad-url="https://www.profitablecpmratenetwork.com/hqh5t3twpm?key=cd9aed8a088b43801e0628122e31b720"
+                     data-match-url="detail">
+                    <span class="match-status status-upcoming">22:00</span>
+                    <div class="match-content">
+                        <div class="team">
+                            <div class="team-logo">COL</div>
+                            <span class="team-name">Colombia</span>
+                        </div>
+                        <div class="score-area">
+                            <span class="score">vs</span>
+                            <span class="match-time">Eliminatorias</span>
+                        </div>
+                        <div class="team">
+                            <div class="team-logo">PER</div>
+                            <span class="team-name">Perú</span>
+                        </div>
+                    </div>
+                    <button class="watch-btn">Ver Transmisión</button>
+                </div>
             </div>
 
-            <div class="match-card" data-match-id="lit-geo" data-ad-url="https://google.com?q=ad-soccer-2"
-                data-match-url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                <span class="match-status status-live">En Vivo</span>
-                <div class="match-content">
-                    <div class="team">
-                        <div class="team-logo">LIT</div>
-                        <span class="team-name">Lituania</span>
+                <!-- Partido adicional 2 -->
+                <div class="match-card" data-match-id="mx-usa" data-ad-url="https://ecuabet.com/"
+                    data-match-url="detail">
+                    <span class="match-status status-upcoming">23:30</span>
+                    <div class="match-content">
+                        <div class="team">
+                            <div class="team-logo">MEX</div>
+                            <span class="team-name">México</span>
+                        </div>
+                        <div class="score-area">
+                            <span class="score">vs</span>
+                            <span class="match-time">Concacaf</span>
+                        </div>
+                        <div class="team">
+                            <div class="team-logo">USA</div>
+                            <span class="team-name">USA</span>
+                        </div>
                     </div>
-                    <div class="score-area">
-                        <span class="score">0 - 2</span>
-                        <span class="match-time">78 min</span>
-                    </div>
-                    <div class="team">
-                        <div class="team-logo">GEO</div>
-                        <span class="team-name">Georgia</span>
-                    </div>
+                    <button class="watch-btn">Ver Transmisión</button>
                 </div>
-                <button class="watch-btn">Mirar Ahora</button>
+        </div>
             </div>
         </div>
+    </div>
 
-        <h2 class="section-title" id="upcoming" style="margin-top: 80px;">Próximos Partidos Mañana (29 Mar)</h2>
-        <div class="match-grid" id="upcoming-matches">
+    <!-- Match Detail View (Hidden by default) -->
+    <div id="match-view" style="display: none; padding-top: 100px;">
+        <div class="match-layout">
+            <aside class="ad-sidebar left-ad">
+                <!-- BANNER IZQUIERDO -->
+                <div id="ad-container-left">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : '5b22fc910813e151a7c598258755dfe6',
+                            'format' : 'iframe',
+                            'height' : 600,
+                            'width' : 160,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="https://www.highperformanceformat.com/5b22fc910813e151a7c598258755dfe6/invoke.js"></script>
+                </div>
+            </aside>
 
-            <div class="match-card" data-match-id="arg-mor" data-ad-url="https://google.com?q=ad-soccer-3"
-                data-match-url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                <span class="match-status status-upcoming">Mañana - 15:00</span>
-                <div class="match-content">
-                    <div class="team">
-                        <div class="team-logo">ARG</div>
-                        <span class="team-name">Argentina</span>
-                    </div>
-                    <div class="score-area">
-                        <span class="score">vs</span>
-                        <span class="match-time">Amistoso</span>
-                    </div>
-                    <div class="team">
-                        <div class="team-logo">MAR</div>
-                        <span class="team-name">Marruecos</span>
+            <main class="match-detail-main">
+                <div class="match-header">
+                    <button id="back-to-list" style="background: none; border: 1px solid var(--glass-border); color: var(--text-primary); padding: 8px 15px; border-radius: 8px; cursor: pointer; margin-bottom: 20px;">⬅ Volver a Partidos de Hoy</button>
+                    <!-- TÍTULO DEL PARTIDO ACTUAL -->
+                    <h2 class="match-title">Real Madrid <span>vs</span> Barcelona</h2>
+                </div>
+
+                <div class="video-container">
+                    <!-- MINIATURA DEL PARTIDO (Cambia el src por la imagen del día) -->
+                    <img src="el_clasico_thumbnail_1774893975545.png" alt="Match Thumbnail" class="video-placeholder">
+                    <div class="play-overlay"></div>
+                </div>
+
+                <div class="channels-bar">
+                    <span class="icon">📺</span>
+                    <!-- CANALES TRANSMISORES -->
+                    <span class="text">Canales: ESPN, Star+, DSports y Sky Sports.</span>
+                </div>
+
+                <div class="schedule-container">
+                    <!-- TABLA DE HORARIOS (Sustituye horas si es necesario) -->
+                    <div class="schedule-grid">
+                        <div class="schedule-item">
+                            <span><span class="country-code">MX</span> MEX/GUA</span>
+                            <span>13:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span><span class="country-code">CO</span> COL/ECU</span>
+                            <span>14:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span><span class="country-code">PE</span> PERÚ</span>
+                            <span>14:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span><span class="country-code">VE</span> VEN/DOM</span>
+                            <span>15:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span><span class="country-code">PY</span> PARAGUAY</span>
+                            <span>16:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span><span class="country-code">AR</span> ARG/URU</span>
+                            <span>16:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span><span class="country-code">BR</span> BRASIL (BSB)</span>
+                            <span>16:00</span>
+                        </div>
+                        <div class="schedule-item">
+                            <span><span class="country-code">ES</span> ESPAÑA</span>
+                            <span>21:00</span>
+                        </div>
                     </div>
                 </div>
-                <button class="watch-btn">Agendar Recordatorio</button>
-            </div>
 
-            <div class="match-card" data-match-id="bra-esp" data-ad-url="https://google.com?q=ad-soccer-4"
-                data-match-url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                <span class="match-status status-upcoming">Mañana - 19:30</span>
-                <div class="match-content">
-                    <div class="team">
-                        <div class="team-logo">BRA</div>
-                        <span class="team-name">Brasil</span>
-                    </div>
-                    <div class="score-area">
-                        <span class="score">vs</span>
-                        <span class="match-time">Amistoso</span>
-                    </div>
-                    <div class="team">
-                        <div class="team-logo">ESP</div>
-                        <span class="team-name">España</span>
-                    </div>
-                </div>
-                <button class="watch-btn">Agendar Recordatorio</button>
-            </div>
+                <div class="match-actions">
+                    <!-- ACTUALIZA AQUÍ LOS LINKS DE LOS SERVIDORES (data-match-url) -->
+                    
+                    <!-- Botón Transmisión 1 (HD) -->
+                    <button class="btn-premium btn-primary server-btn" data-ad-url="https://www.profitablecpmratenetwork.com/hqh5t3twpm?key=cd9aed8a088b43801e0628122e31b720"
+                        data-match-url="https://servidor1.com/stream">
+                        🚀 VER TRANSMISIÓN HD
+                    </button>
 
-            <div class="match-card" data-match-id="mex-ita" data-ad-url="https://google.com?q=ad-soccer-5"
-                data-match-url="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
-                <span class="match-status status-upcoming">Mañana - 21:00</span>
-                <div class="match-content">
-                    <div class="team">
-                        <div class="team-logo">MEX</div>
-                        <span class="team-name">México</span>
-                    </div>
-                    <div class="score-area">
-                        <span class="score">vs</span>
-                        <span class="match-time">Amistoso</span>
-                    </div>
-                    <div class="team">
-                        <div class="team-logo">ITA</div>
-                        <span class="team-name">Italia</span>
-                    </div>
+                    <!-- Botón Opción 2 -->
+                    <button class="btn-premium btn-secondary server-btn" data-ad-url="https://www.profitablecpmratenetwork.com/hqh5t3twpm?key=cd9aed8a088b43801e0628122e31b720"
+                        data-match-url="https://servidor2.com/stream">
+                        OPCIÓN 2
+                    </button>
                 </div>
-                <button class="watch-btn">Agendar Recordatorio</button>
-            </div>
+            </main>
+
+            <aside class="ad-sidebar right-ad">
+                <!-- BANNER DERECHO -->
+                <div id="ad-container-right">
+                    <script type="text/javascript">
+                        atOptions = {
+                            'key' : '5b22fc910813e151a7c598258755dfe6',
+                            'format' : 'iframe',
+                            'height' : 600,
+                            'width' : 160,
+                            'params' : {}
+                        };
+                    </script>
+                    <script type="text/javascript" src="https://www.highperformanceformat.com/5b22fc910813e151a7c598258755dfe6/invoke.js"></script>
+                </div>
+            </aside>
         </div>
     </div>
 
@@ -152,7 +247,7 @@
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script type="module" src="scripts.js"></script>
 </body>
 
 </html>
